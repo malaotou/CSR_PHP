@@ -10,7 +10,7 @@
 the received stream inside an HTML5 <video> element</p>
 <p>View page source to access both HTML and JavaScript code...</p>
 <video autoplay></video>
-<script src="getUserMedia.js"></script>
+<script src="js/getUserMedia.js"></script>
 </div>
 </body>
 </html>
