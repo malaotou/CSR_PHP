@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>getUserMedia very simple demo</title>
-</head>
-<body>
-<div id="mainDiv">
-<h1><code>getUserMedia()</code> very simple demo</h1>
-<p>With this example, we simply call <code>getUserMedia()</code> and display
-the received stream inside an HTML5 <video> element</p>
-<p>View page source to access both HTML and JavaScript code...</p>
-<video autoplay></video>
-<script src="js/getuserMedia.js"></script>
-</div>
-</body>
-</html>
+<?php
+
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/../CSR_PHP/framework/yii/framework/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
+
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
+
+require_once($yii);
+Yii::createWebApplication($config)->run();
